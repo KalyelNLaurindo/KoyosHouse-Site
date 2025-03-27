@@ -3,6 +3,7 @@
 .gradient-text {
     background: linear-gradient(to right, #693227, #E48E8D, #F8F9FA);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }
@@ -114,4 +115,8 @@
   .google-play-btn:hover {
     background-color: #fff; /* Fundo branco ao passar o mouse */
     color: #000; /* Texto preto ao passar o mouse */
+  }
+
+  .custom-text {
+    color: #E48E8D;
   }
