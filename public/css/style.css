@@ -25,31 +25,48 @@
     font-weight: 500;
   }
   
+  /* Estilo do rodapé */
   footer {
     background-color: #0a0a0a;
+    color: #ccc;
     font-size: 0.9rem;
-    letter-spacing: 0.3px;
   }
   
   footer h6 {
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    color: #e5e5e5;
+    color: #fff;
   }
   
   footer ul li a {
-    color: #cccccc;
+    color: #ccc;
     transition: color 0.3s;
   }
   
   footer ul li a:hover {
-    color: #0d6efd;
+    color: #0d6efd; /* Cor de destaque ao passar o mouse */
+  }
+  
+  footer .social-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* Deixa os ícones brancos */
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  footer .social-icon:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+    filter: brightness(0.8) invert(1); /* Escurece levemente */
   }
   
   footer .text-muted {
-    color: #999 !important;
+    color: #777 !important;
+  }
+  
+  footer .border-top {
+    border-color: #333 !important;
   }
   
   footer p {
@@ -73,4 +90,28 @@
   footer a.ativo {
     color: #0d6efd !important;
     font-weight: 500;
+  }
+
+  footer .d-flex img {
+    width: 24px; /* Define a largura */
+    height: 24px; /* Define a altura */
+    object-fit: contain; /* Garante que a proporção seja mantida */
+  }
+
+  /* Estilo do botão Google Play */
+  .google-play-btn {
+    border: 2px solid #fff; /* Borda branca */
+    color: #fff; /* Texto branco */
+    font-size: 0.9rem; /* Tamanho do texto */
+    font-weight: 500; /* Peso do texto */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .google-play-btn:hover {
+    background-color: #fff; /* Fundo branco ao passar o mouse */
+    color: #000; /* Texto preto ao passar o mouse */
   }
