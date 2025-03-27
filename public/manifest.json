@@ -1,0 +1,17 @@
+{
+    "name": "KoyosHouse",
+    "short_name": "Koyos",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "description": "Site institucional da KoyosHouse, focado em soluções de TI com excelência.",
+    "icons": [
+      {
+        "src": "img/KoyosHouseLogo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
