@@ -120,3 +120,226 @@
   .custom-text {
     color: #E48E8D;
   }
+
+  /* Modal de Consentimento de Cookies */
+  .cookie-consent-modal {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    z-index: 9999; /* Sobrepõe outros elementos */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .cookie-consent-modal.hide {
+    opacity: 0;
+    pointer-events: none; /* Desativa interações quando oculto */
+  }
+
+  .cookie-consent-content {
+    max-width: 400px;
+    background: #1a1a1a; /* Fundo escuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .cookie-consent-content p {
+    margin-bottom: 15px;
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+
+  .cookie-consent-content a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+
+  .cookie-consent-content a:hover {
+    text-decoration: underline;
+  }
+
+  .cookie-consent-content button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+
+  .cookie-consent-content button:hover {
+    background: #0d6efd;
+    color: #fff;
+  }
+
+  /* === Cookie Consent === */
+
+  .cookie-consent-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 320px;
+    background-color: #111; /* Fundo escuro */
+    color: #fff;            /* Texto branco */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .cookie-consent-container.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .cookie-consent-content p {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .cookie-consent-content .cookie-link {
+    color: #E48E8D;
+    text-decoration: none;
+  }
+
+  .cookie-consent-content .cookie-link:hover {
+    text-decoration: underline;
+    color: #f5a8a7; /* Tom mais claro no hover */
+  }
+
+  #btnAcceptCookies {
+    width: 100%;
+    background-color: #e9e9e9;
+    color: #000;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-weight: bold;
+  }
+
+  #btnAcceptCookies:hover {
+    background-color: #fff;
+  }
+
+  /* Ajustes para telas muito pequenas */
+  @media (max-width: 480px) {
+    .cookie-consent-container {
+      padding: 1rem;
+    }
+    .cookie-consent-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Estilo avançado para cards do carrossel */
+
+  .card.bg-dark {
+    background-color: #121212;
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+  }
+
+  .card.bg-dark:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(228, 142, 141, 0.25);
+  }
+
+  .card-img-top {
+    border-radius: 12px 12px 0 0;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+
+  .card a.btn {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #E48E8D;
+    border-color: #E48E8D;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card a.btn:hover {
+    background: linear-gradient(90deg, #E48E8D, #f6c2c1); /* Gradiente rosa */
+    color: black;
+    border: none;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: invert(1);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 1.5rem 1.5rem;
+  }
+
+  /* Estilo das setas do carrossel */
+  .carousel-control-prev-icon.custom-arrow,
+  .carousel-control-next-icon.custom-arrow {
+    background: none;
+    font-size: 2rem;
+    color: #ffffff;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-control-prev-icon.custom-arrow:hover,
+  .carousel-control-next-icon.custom-arrow:hover {
+    opacity: 1;
+    color: #E48E8D; /* Cor rosa ao passar o mouse */
+  }
+
+  .carousel-control.custom-arrow {
+    background: linear-gradient(90deg, #E48E8D, #f6c2c1); /* Gradiente rosa */
+    border: none;
+    border-radius: 0.75rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .carousel-control.custom-arrow:hover {
+    background: #E48E8D; /* Fundo sólido rosa no hover */
+    color: white;
+    transform: scale(1.05);
+  }
