@@ -1,15 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const cookieConsent = document.getElementById('cookieConsent');
-  const btnAccept = document.getElementById('btnAcceptCookies');
+document.addEventListener("DOMContentLoaded", () => {
+  const cookieConsent = document.getElementById("cookieConsent");
+  const acceptButton = document.getElementById("btnAcceptCookies");
 
-  // Verifica se o consentimento já foi aceito
-  if (!localStorage.getItem('cookieConsentAccepted')) {
-    cookieConsent.classList.remove('hide'); // Mostra o banner
+  // Verifica se o consentimento já foi dado
+  if (!localStorage.getItem("cookiesAccepted")) {
+    cookieConsent.classList.remove("hide");
   }
 
-  // Aceita o consentimento e salva no localStorage
-  btnAccept.addEventListener('click', () => {
-    localStorage.setItem('cookieConsentAccepted', 'true');
-    cookieConsent.classList.add('hide'); // Esconde o banner
+  // Registra o consentimento ao clicar no botão
+  acceptButton.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookieConsent.classList.add("hide");
   });
 });
